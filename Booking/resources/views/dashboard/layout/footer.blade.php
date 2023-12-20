@@ -39,33 +39,7 @@
  <script src="{{ asset('dashboard') }}/assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
  <script src="{{ asset('dashboard') }}/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
  <!-- END THEME LAYOUT SCRIPTS -->
- <script>
-$(document).ready(function () {
-    function fetchNotifications() {
-        $('#notification-icon-counter')
-        $.ajax({
-            url: '{{ route("notifications") }}', // Change this URL to your Laravel route
-            type: 'POST',
-            data:{
-                '_token': '{{csrf_token()}}' ,
-                'old_counter':$('#notifications_counter_js').val()
-            },
-            dataType: 'json',
-            success: function (data) {
-                if(data.status == 1){
-                    $('#notification-icon-counter').text(data.counter);
-                    $('#notifications_counter_js').val(data.counter);
-                    $('#notifications-content').html(data.content);
-                }
-            },
-            error: function (xhr, status, error) {
-            }
-        });
-    }
-    fetchNotifications();
-    setInterval(fetchNotifications, 3000);
-});
-</script>
+@yield('custom-script')
 
 </body>
 
