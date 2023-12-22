@@ -6,7 +6,7 @@
 
 @section('content')
 
-<h3 class="page-title"> الرحلات  </h3>
+<h3 class="page-title"> الرحلات </h3>
 <div class="row">
     <div class="col-md-12">
         <!-- BEGIN VALIDATION STATES-->
@@ -24,26 +24,123 @@
                     @csrf
                     <div class="form-body">
                         <div class="form-group">
-                            <label class="col-md-1 control-label">الرحلات
+                            <label class="col-md-1 control-label"> التكلفة للشخص البالغ
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="name" class="form-control" placeholder="">
-                                @error('name')
+                                <input type="text" name="price_adult" class="form-control"
+                                    placeholder="ادخل التكلفة للشخص البالغ">
+                                @error('price_adult')
                                 <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-1 control-label">العملة
+                            <label class="col-md-1 control-label"> التكلفة للطفل
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="currency_id" class="form-control" placeholder="اخل عملة الدولة">
-                                @error('currency_id')
+                                <input type="text" name="child_price" class="form-control"
+                                    placeholder="اخل التكلفة للطفل">
+                                @error('child_price')
                                 <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> دولة الاقلاع
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <select class=" form-control " aria-label="Default  example" name="from_country" id="from_country">
+                                    <option selected>Open this select menu</option>
+                                    @foreach ($countries as $country )
+                                    <option value="{{$country->id}}">{{$country->name}}</option>
+                                    @endforeach
+                                </select>
+                                @error('from')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> دولة الاقلاع
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <select class=" form-control " aria-label="Default  example" name="from">
+                                    <option selected>Open this select menu</option>
+                                    @foreach ($countries as $country )
+                                    <option value="{{$country->id}}">{{$country->name}}</option>
+                                    @endforeach
+                                </select>
+                                @error('from')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> دولة الوصول
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <select class="form-control" aria-label="Default  example">
+                                    <option selected>Open this select menu</option>
+                                    @foreach ($countries as $country )
+                                    <option value="{{$country->id}}">{{$country->name}}</option>
+                                    @endforeach
+                                </select>
+                                @error('to')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> مدينة الوصول
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <select class="form-control" aria-label="Default  example" name="to" id="city_to">
+                                    <option selected>Open this select menu</option>
+                                </select>
+                                @error('to')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> الحد الاقصي للركاب
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" name="child_price" class="form-control"
+                                    placeholder="الحد الاقصي للركاب">
+                                @error('child_price')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> موعد الاقلاع
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="time" name="tack_off_time" class="form-control">
+                            </div>
+                            @error('tack_off_time')
+                            <small class="text-danger">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-1 control-label"> موعد الوصول
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="time" name="arriving_time" class="form-control">
+                            </div>
+                            @error('arriving_time')
+                            <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                     </div>
                     <div class="form-actions">

@@ -17,6 +17,7 @@ class CountriesTableSeeder extends Seeder
         $response = Http::get('https://restcountries.com/v2/all');
         $countries = $response->json();
         // Insert countries into the database
+        
         foreach ($countries as $country) {
             DB::table('countries')->insert([
                 'name' => $country['name'],

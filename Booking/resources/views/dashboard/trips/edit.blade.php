@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<h3 class="page-title"> الدول و  المدن
+<h3 class="page-title"> الرحلات
 
 </h3>
 <div class="row">

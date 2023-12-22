@@ -16,8 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CurrenciesTableSeeder::class,
             CountriesTableSeeder::class,
-            StatesTableSeeder::class,
-            TimezonesTableSeeder::class,
         ]);
     }
 }

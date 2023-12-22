@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreTripRequest;
+use App\Models\Country;
 use App\Models\Trip;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class TripController extends Controller
 {
@@ -12,23 +15,23 @@ class TripController extends Controller
      */
     public function index()
     {
-        //
+        $trips = Trip::paginate(10);
+        return view('dashboard.trips.index' , compact('trips'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        $countries = Country::all();
+        return view('dashboard.trips.create' ,compact('countries') );
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function store(StoreTripRequest $request)
     {
-        //
+        $inputs = $request->all();
+        unset($inputs['_token']);
+        Trip::create($inputs);
+        Alert::success('success' , 'تم حفظ الرحلة بنجاح');
+        return redirect()->route('trips.index');
     }
 
     /**
@@ -44,7 +47,9 @@ class TripController extends Controller
      */
     public function edit(Trip $trip)
     {
-        //
+        $countries = Country::all();
+
+        return view('dashboard.trips.edit' , compact( 'trip' , 'countries' ) );
     }
 
     /**
