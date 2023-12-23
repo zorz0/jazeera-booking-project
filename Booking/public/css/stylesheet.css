@@ -1,0 +1,9 @@
+.sc-header-image{
+    background-image: url("./chatlogo.jpg");
+}
+.sc-header-image img{
+   display: none;
+}
+.sc-chat-window.opened {
+    background: #0000;
+}

@@ -1,0 +1,35 @@
+﻿.search-flights-wrapper .container .tab-panel .btn-switch.active{background-color:#004a97 !important ;border-radius:0px}.btn.btn-dropdown .options.active{color:var(--main-bg-color)}.tab-panel .panel-data-wrapper{background:var(--main-bg-color)}header .header-inner .main-nav>li>a{color:var(--main-bg-color)!important}header .header-inner .main-nav>li .sub-menu{background:var(--main-bg-color)}header .header-inner .main-nav>li.active>a,header .header-inner .main-nav>li.hover>a{color:var(--main-bg-color)!important}header .header-inner .toggle-btns li a{color:var(--main-bg-color)!important}
+.search-flights-wrapper .container .tab-panel .btn-switch {}.btn .btn-dropdown .icon-arrow-down{color:var(--main-bg-color)!important}.btn.btn-dropdown.active,.btn.btn-dropdown:focus,.btn.btn-dropdown:hover{border-color:var(--main-bg-color)!important}#aff_searchbox #frm{background:var(--main-bg-color)!important}.carousel_4 .slick-list .slick-track .slick-item .card .card-body a{background-color:var(--main-bg-color)!important}.strip-panel{background:var(--main-bg-color)!important}.strip-panel .panel-items-wrap a h4,.strip-panel .panel-items-wrap a i{color:#004a97 !important}.strip-panel .panel-items-wrap .panel-item a:hover{color:#fff!important}.strip-panel .panel-items-wrap .panel-item:hover{color:#004a97 !important}h1,h2,h3,h4,h5{color:var(--main-bg-color)}.title .spl{color:var(--main-bg-color)}.list-with-icon a:visited{background-color:var(--main-bg-color)}.list-with-icon a{color:var(--main-bg-color)!important}footer ul.footer-menu li a strong{color:var(--main-bg-color)}.btn.btn-default:hover{border-color:var(--main-bg-color);background-color:var(--main-bg-color)}.btn-rounded .btn:hover,.btn-rounded .btn:visited:hover,.btn-rounded.btn:visited{background-color:var(--main-bg-color)!important}.carousel_4 .slick-list .slick-track .slick-item .card .card-body{background:var(--deals-color)}.list-with-icon .btn .btn-default .btn-arrow{color:var(--main-bg-color)}header .mobile-header .mobile-menu-wrap{background:var(--main-bg-color)!important}.tab-panel .panel-data-wrapper .form-field .help-block{background:var(--main-bg-color)!important}section.banner .slideshow-wrapper .slideshow-controls .slick-dots li.slick-active button{background:#40b4e5}
+.search-flights-wrapper .container .tab-panel .panel-switch .btn-switch {background-color: #0D84C7 !important}.tab-panel .panel-data-wrapper .switch-sub-panel a{background-color:transparent!important}.search-flights-wrapper .container .tab-panel .btn-switch.active{background-color:#004a97 !important}section.about-jazeera .overlay .list-with-icon .icon-wrap{background:var(--discover)}.btn.btn-dropdown .icon-arrow-down{color:var(--main-bg-color)}section.banner .slideshow-wrapper .slideshow-controls .slick-dots li.slick-active button{background:#40b4e5}header .header-inner .toggle-btns li a:after,header .header-inner .toggle-btns li a:hover{color:var(--main-bg-color)!important}.month-element{color:var(--main-bg-color)!important}.date-picker-wrapper .month-wrapper table .day.checked.first-date-selected,.date-picker-wrapper .month-wrapper table .day.checked.last-date-selected{background:var(--main-bg-color)!important}.date-picker-wrapper .date-picker-wrapper table .caption span,.date-picker-wrapper table .caption span{color:var(--main-bg-color)!important}.toggle-mobile-btns a{color:var(--main-bg-color)!important}.icon-arrow-down:before{color:var(--main-bg-color)}.carousel-prev_4 .icon-arrow-down:before{color:#fff}#dountryDropdownCountryIcon.icon-arrow-up:before{color:var(--main-bg-color)!important}.btn.btn-primary:not(:disabled):hover{background:#ffe166;border-color:#ffe166}
+@media (max-width: 768px) {
+    footer .footer-navigation > .row > .col-md-4 .footer-menu strong, footer .footer-navigation > .row > .col-md-3 .footer-menu strong, footer .footer-navigation > .row > .col-md-2 .footer-menu strong {
+        color: var(--main-bg-color) !important;
+    }
+}
+.tab-panel .green-theme-hotels {
+    background: #004A97 !important;
+}
+.carousel_4 .slick-item .card .card-body {
+    background: var(--main-bg-color);
+}
+@media (max-width:767px){
+    .desktop_header{
+        display:none;
+    }
+}
+@media (min-width:768px){
+    .mobile_header{
+        display:none;
+    }
+}
+.about-jazeera .list-with-icon a.btn.btn-default {
+    color: #004A97 !important;
+    background-color: #ffffff !important
+}
+    .about-jazeera .list-with-icon a.btn.btn-default:hover {
+        color: #ffffff !important;
+        background-color: #004A97 !important
+    }
+.carousel-prev_4 .icon-arrow-down:before {
+    color: #004a97 !important;
+} 

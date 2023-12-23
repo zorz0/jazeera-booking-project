@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="481" viewBox="0 0 72 481">
+    <defs>
+        <path id="b" d="M21.943 446.272c-5.61-15.797-10.945-37.912-10.945-62.291V79.057H59.88v304.924c0 24.379-5.334 46.494-10.945 62.29-7.482 21.067-12.607 28.502-13.496 28.503-.889 0-6.014-7.436-13.496-28.502z"/>
+        <filter id="a" width="134.8%" height="104.3%" x="-17.4%" y="-1.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.768164201 0 0 0 0 0.835909658 0 0 0 0 0.88671875 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(.56 .094)">
+        <path fill="#DAE6EE" d="M70.879 415.59v40.117l-35.44-11.863L0 455.707v-40.116l35.44-26.385zM70.879 173.637v97.341l-35.44-3.524L0 270.978v-97.341l35.44-14.212z"/>
+        <path fill="#FFF" stroke="#EAEFF5" stroke-width=".518" d="M35.44.259zm0 0c-1.877 0-3.358.571-5.583 2.896-3.339 3.49-7.017 10.127-11.052 20.742-6.307 16.591-7.548 27.704-7.548 59.546v286.143h48.364V83.443c0-31.842-1.24-42.955-7.547-59.546C48.039 13.282 44.36 6.646 41.02 3.155 38.797.83 37.316.26 35.44.26z"/>
+        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+        <path fill="#FFF" stroke="#EAEFF5" stroke-linejoin="square" stroke-width=".518" d="M59.621 79.316H11.257v304.665c0 21.576 4.16 43.14 10.93 62.204 3.367 9.48 6.503 16.902 9.206 22.118 1.984 3.83 3.661 6.212 4.046 6.212.385 0 2.062-2.383 4.046-6.212 2.703-5.216 5.84-12.637 9.207-22.118 6.77-19.063 10.93-40.628 10.93-62.204V79.316z"/>
+        <path fill="#F6F7F9" d="M15.715 52.144h39.417c.118 0 .216.092.224.21l.583 9.531a.224.224 0 0 1-.223.238H15.13a.224.224 0 0 1-.223-.238l.583-9.53a.224.224 0 0 1 .224-.211z"/>
+        <path fill="#FFF" d="M35.317 52.144h1v9.98h-1z"/>
+        <path fill="#EAEFF5" d="M14.665 117.635h41.549v.25h-41.55z"/>
+        <rect width="17.842" height="9.98" x="14.665" y="373.737" fill="#F6F7F9" rx=".224"/>
+        <path fill="#F6F7F9" d="M15.253 395.194h40.328a.224.224 0 0 1 .223.243l-.817 9.531a.224.224 0 0 1-.223.205H16.07a.224.224 0 0 1-.223-.205l-.817-9.531a.224.224 0 0 1 .223-.243z"/>
+        <rect width="17.842" height="9.98" x="38.372" y="373.737" fill="#F6F7F9" rx=".224"/>
+        <path fill="#F6F7F9" d="M35.44 23.877c-1.96 0-9.145 4.928-11.439 6.856-2.294 1.927-4.818 7.577-5.495 9.17-.677 1.594-2.859 6.192-2.598 6.677.261.485 2.528.57 3.318-.376.79-.945 2.879-5.346 3.377-6.3.499-.956 1.205-3.795 3.31-5.37 2.105-1.573 8.176-5.072 9.526-5.072v-5.585z"/>
+        <path fill="#F6F7F9" d="M35.44 23.877c1.958 0 9.143 4.928 11.437 6.856 2.294 1.927 4.819 7.577 5.496 9.17.676 1.594 2.858 6.192 2.597 6.677-.26.485-2.528.57-3.317-.376-.79-.945-2.88-5.346-3.378-6.3-.498-.956-1.205-3.795-3.31-5.37-2.104-1.573-8.175-5.072-9.526-5.072v-5.585z"/>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 126.149)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 126.149)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 136.129)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 136.129)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g transform="translate(15.428 82.02)">
+            <rect width="6.361" height="6.865" fill="#DFE5EE" rx=".42"/>
+            <rect width="5.884" height="6.865" fill="#F1F4F8" rx=".42" transform="translate(9.996)"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#F1F4F8" rx=".42"/>
+            <rect width="6.361" height="6.865" x="9.996" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="33.472" fill="#DFE5EE" rx=".42"/>
+        </g>
+        <g transform="translate(15.428 94.027)">
+            <rect width="6.361" height="6.865" fill="#DFE5EE" rx=".42"/>
+            <rect width="5.884" height="6.865" fill="#F1F4F8" rx=".42" transform="translate(9.996)"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#F1F4F8" rx=".42"/>
+            <rect width="6.361" height="6.865" x="9.996" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="33.472" fill="#DFE5EE" rx=".42"/>
+        </g>
+        <g transform="translate(15.428 106.19)">
+            <rect width="6.361" height="6.865" fill="#DFE5EE" rx=".42"/>
+            <rect width="5.884" height="6.865" fill="#F1F4F8" rx=".42" transform="translate(9.996)"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#F1F4F8" rx=".42"/>
+            <rect width="6.361" height="6.865" x="9.996" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="23.476" fill="#DFE5EE" rx=".42"/>
+            <rect width="6.361" height="6.865" x="33.472" fill="#DFE5EE" rx=".42"/>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 145.952)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 145.952)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 155.776)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 155.776)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 165.6)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 165.6)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 175.58)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 175.58)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 185.403)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 185.403)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 195.383)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 195.383)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 209.105)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 209.105)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 218.616)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 218.616)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 227.972)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 227.972)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 237.484)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 237.484)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 246.996)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 246.996)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 256.352)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 256.352)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 265.864)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 265.864)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 284.732)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 284.732)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 274.732)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 274.732)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 294.243)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 294.243)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 303.6)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 303.6)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 313.111)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 313.111)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 322.623)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 322.623)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 331.979)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 331.979)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 341.49)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 341.49)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 350.847)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 350.847)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+        <g fill="#DFE5EE">
+            <g transform="translate(14.665 360.359)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+            <g transform="translate(38.665 360.359)">
+                <rect width="5.265" height="4.763" rx=".42"/>
+                <rect width="5.265" height="4.763" x="12.852" rx=".42"/>
+                <rect width="5.265" height="4.763" x="6.503" rx=".42"/>
+            </g>
+        </g>
+    </g>
+</svg>
