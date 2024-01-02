@@ -18,4 +18,8 @@ class Country extends Model
 
         return $this->belongsTo(Currency::class,'currency','name');
     }
+    public function cities()
+    {
+        return $this->hasMany(City::class,);
+    }
 }

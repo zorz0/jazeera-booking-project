@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CityController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TripController;
@@ -7,20 +8,9 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\CurrencyController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 include_once "frontend.php";
-// Route::get('/', function () {
-// return view('welcome');
-// });
+
 
 Auth::routes();
 
@@ -41,7 +31,7 @@ Route::controller(TripController::class)->prefix('trips')->middleware('auth')->n
     Route::get('/create', 'create')->name('create');
     Route::post('/', 'store')->name('store');
     Route::get('/{trip}', 'edit')->name('edit');
-    Route::put('/{trip}', 'update')->name('update');
+    Route::post('/{trip}', 'update')->name('update');
     Route::delete('destroy/{client}', 'destroy')->name('destroy');
 });
 
@@ -62,3 +52,11 @@ Route::controller(CurrencyController::class)->prefix('currencies')->middleware('
     Route::put('/{currency}', 'update')->name('update');
     Route::delete('destroy/{currency}', 'destroy')->name('destroy');
 });
+
+Route::controller(CityController::class)->prefix('cities')->middleware('auth')->name('cities.')->group(function () {
+    Route::post('/getCitiesByCountryAjax', 'getCitiesByCountryAjax')->name('getCitiesByCountryAjax');
+});
+
+Route::view('/choose_trip' , 'frontend.choose_trip');
+Route::view('/trip_invoice' , 'frontend.trip_invoice');
+Route::view('/passengers_details' , 'frontend.passengers_details');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTripRequest;
+use App\Models\City;
 use App\Models\Country;
 use App\Models\Trip;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class TripController extends Controller
      */
     public function index()
     {
-        $trips = Trip::paginate(10);
+        $trips = Trip::with(['fromCity' , 'toCity'])->paginate(10);
         return view('dashboard.trips.index' , compact('trips'));
     }
 
@@ -28,7 +29,7 @@ class TripController extends Controller
     public function store(StoreTripRequest $request)
     {
         $inputs = $request->all();
-        unset($inputs['_token']);
+        unset($inputs['_token'] );
         Trip::create($inputs);
         Alert::success('success' , 'تم حفظ الرحلة بنجاح');
         return redirect()->route('trips.index');
@@ -48,8 +49,10 @@ class TripController extends Controller
     public function edit(Trip $trip)
     {
         $countries = Country::all();
+        $from_cities = City::where('country_id' , $trip->fromCity->country_id)->get();
+        $to_cities = City::where('country_id' , $trip->toCity->country_id)->get();
 
-        return view('dashboard.trips.edit' , compact( 'trip' , 'countries' ) );
+        return view('dashboard.trips.edit' , compact( 'trip' , 'countries' , 'to_cities','from_cities') );
     }
 
     /**
@@ -57,7 +60,17 @@ class TripController extends Controller
      */
     public function update(Request $request, Trip $trip)
     {
-        //
+        $inputs = $request->all();
+        $trip->passengers = $inputs['passengers'];
+        $trip->tack_off_time = $inputs['tack_off_time'];
+        $trip->arriving_time = $inputs['arriving_time'];
+        $trip->to = $inputs['to'];
+        $trip->from = $inputs['from'];
+        $trip->price_adult = $inputs['price_adult'];
+        $trip->child_price = $inputs['child_price'];
+        $trip->save();
+        Alert::success('success' , 'تم تعديل الرحلة بنجاح');
+        return redirect()->route('trips.index');
     }
 
     /**
@@ -65,6 +78,8 @@ class TripController extends Controller
      */
     public function destroy(Trip $trip)
     {
-        //
+        $trip->delete();
+        Alert::success('success' , 'تم حذف الرحلة بنجاح');
+        return redirect()->route('trips.index');
     }
 }

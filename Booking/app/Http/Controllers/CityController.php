@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\City;
+use App\Models\Country;
 use Illuminate\Http\Request;
 
 class CityController extends Controller
@@ -61,5 +62,11 @@ class CityController extends Controller
     public function destroy(City $city)
     {
         //
+    }
+    public function getCitiesByCountryAjax(Request $request){
+        $country = Country::whereId($request->country_id)->first();
+        $cities = $country->cities;
+        $cities_view = view('dashboard.cities.get_cities_by_country' , compact('cities'))->render();
+        return response()->json(['status' => 1 , 'data' => $cities_view] );
     }
 }

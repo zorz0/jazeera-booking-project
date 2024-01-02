@@ -17,8 +17,8 @@
             </div>
             <div class="portlet-body">
                 <!-- BEGIN FORM-->
-                <form action="{{ route('clients.update',$client->id) }}" method="post" id="form_sample_3" class="form-horizontal"
-                    novalidate="novalidate">
+                <form action="{{ route('clients.update',$client->id) }}" method="post" id="form_sample_3"
+                    class="form-horizontal" novalidate="novalidate">
                     @csrf
                     @method('PUT')
                     <div class="form-body">
@@ -35,22 +35,22 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="first_name" data-required="1" class="form-control"
-                                    value="{{ old('first_name')? old('first_name'):$client->first_name }}">
+                                <input type="text" name="name" data-required="1" class="form-control"
+                                    value="{{ old('name')? old('name'):$client->name }}">
                             </div>
-                            @error('first_name')
+                            @error('name')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">otp
+                            <label class="control-label col-md-3">Email
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="last_name" data-required="1" class="form-control"
-                                    value="{{ old('otp_number')? old('otp_number'):$client->otp_number }}">
+                                <input type="email" name="email" data-required="1" class="form-control"
+                                    value="{{ old('email')? old('email'):$client->email }}">
                             </div>
-                            @error('otp_number')
+                            @error('email')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
@@ -71,20 +71,24 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="national_number" data-required="1" class="form-control"
-                                    value="{{ old('national_number')? old('national_number'):$client->national_number }}">
+                                <input type="text" name="id" data-required="1" class="form-control"
+                                    value="{{ old('id')? old('id'):$client->id }}">
                             </div>
-                            @error('national_number')
+                            @error('id')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3"> نفاد
+                            <label class="control-label col-md-3"> الدولة
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="nafed_otp" data-required="1" class="form-control"
-                                    value="{{ old('nafed_otp')? old('nafed_otp'):$client->nafed_otp }}">
+                                <select class=" form-control " aria-label="Default  example"name="country_id">
+                                    @foreach ($countries as $country )
+                                    <option @if ($client->country_id == $country->id) selected="selected" @endif
+                                        value="{{$country->id}}">{{$country->name}}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                     </div>

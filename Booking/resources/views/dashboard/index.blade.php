@@ -20,7 +20,7 @@
                     <h3 class="font-blue-sharp">
                         <span data-counter="counterup" data-value="567">0</span>
                     </h3>
-                    <small>عدد الخدمات</small>
+                    <small>عدد الرحلات</small>
                 </div>
                 <div class="icon">
                     <i class="icon-basket"></i>

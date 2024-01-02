@@ -45,8 +45,6 @@
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <a href="">
-                        <img src="{{ asset('dashboard') }}/assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <span></span>
                     </div>
@@ -87,13 +85,6 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
-
-
-
-                                <li>
-                                    <a href="{{ route('logout') }}">
-                                        <i class="icon-key"></i> Log Out </a>
-                                </li>
                             </ul>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->
