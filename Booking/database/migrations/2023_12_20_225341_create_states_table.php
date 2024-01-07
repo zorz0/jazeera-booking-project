@@ -13,11 +13,14 @@ return new class extends Migration
     {
         Schema::create('states', function (Blueprint $table) {
             $table->id();
-            $table->string('country_code');
-            $table->string('state_code');
-            $table->string('state_name');
+            $table->string('name');
+            $table->string('country_id');
             $table->timestamps();
+
+            $table->foreign('country_id')->references('id')->on('counties');
         });
+
+        
     }
 
     /**

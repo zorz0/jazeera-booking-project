@@ -39,10 +39,10 @@
                                 <td> {{ $loop->iteration }} </td>
                                 <td> {{ $trip->fromCity->name }} </td>
                                 <td> {{ $trip->toCity->name }} </td>
-                                <td> {{ $trip->tack_off_time }} </td>
-                                <td> {{ $trip->arriving_time }} </td>
+                                <td> {{ $trip->leaving_date }} </td>
+                                <td> {{ $trip->arriving_date }} </td>
                                 <td> {{ $trip->price_adult }} </td>
-                                <td> {{ $trip->child_price }}</td>
+                                <td> {{ $trip->price_child }}</td>
                                 <td>{{ $trip->passengers}}</td>
                                 <td>
                                     <form method="post" action="{{route('trips.destroy' , $trip->id) }}"

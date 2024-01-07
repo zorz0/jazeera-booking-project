@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Trip extends Model
 {
     use HasFactory;
-    protected $fillable = ['from' , 'passengers' ,'to' , 'price_adult' , 'child_price' ,'tack_off_time' , 'arriving_time'];
+    protected $fillable = ['price_adult' , 'price_child' ,'from' , 'to' , 'leaving_date' ,'arriving_date' , 'passengers'];
 
     public function fromCity(){
 

@@ -28,6 +28,7 @@ class TripController extends Controller
 
     public function store(StoreTripRequest $request)
     {
+       // dd($request);
         $inputs = $request->all();
         unset($inputs['_token'] );
         Trip::create($inputs);
@@ -62,12 +63,12 @@ class TripController extends Controller
     {
         $inputs = $request->all();
         $trip->passengers = $inputs['passengers'];
-        $trip->tack_off_time = $inputs['tack_off_time'];
-        $trip->arriving_time = $inputs['arriving_time'];
+        $trip->leaving_date = $inputs['leaving_date'];
+        $trip->arriving_date = $inputs['arriving_date'];
         $trip->to = $inputs['to'];
         $trip->from = $inputs['from'];
         $trip->price_adult = $inputs['price_adult'];
-        $trip->child_price = $inputs['child_price'];
+        $trip->price_child = $inputs['price_child'];
         $trip->save();
         Alert::success('success' , 'تم تعديل الرحلة بنجاح');
         return redirect()->route('trips.index');
@@ -76,8 +77,9 @@ class TripController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Trip $trip)
+    public function destroy($id)
     {
+        $trip=Trip::find($id);
         $trip->delete();
         Alert::success('success' , 'تم حذف الرحلة بنجاح');
         return redirect()->route('trips.index');

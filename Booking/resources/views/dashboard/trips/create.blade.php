@@ -41,9 +41,9 @@
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-8">
-                                    <input type="text" name="child_price" class="form-control"
+                                    <input type="text" name="price_child" class="form-control"
                                         placeholder="اخل التكلفة للطفل">
-                                    @error('child_price')
+                                    @error('price_child')
                                     <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
@@ -120,24 +120,24 @@
                         <br>
                         <div class="row mb-2">
                             <div class="col col-md-6">
-                                <label class="col-md-4 control-label"> موعد الوصول
-                                    <span class="required" aria-required="true"> * </span>
-                                </label>
-                                <div class="col-md-8">
-                                    <input type="time" name="arriving_time" class="form-control">
-                                </div>
-                                @error('arriving_time')
-                                <small class="text-danger">{{ $message }}</small>
-                                @enderror
-                            </div>
-                            <div class="col col-md-6">
                                 <label class="col-md-4 control-label"> موعد الاقلاع
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-8">
-                                    <input type="time" name="tack_off_time" class="form-control">
+                                    <input type="datetime-local" name="leaving_date" class="form-control">
                                 </div>
-                                @error('tack_off_time')
+                                @error('leaving_date')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                            <div class="col col-md-6">
+                                <label class="col-md-4 control-label"> موعد الوصول
+                                    <span class="required" aria-required="true"> * </span>
+                                </label>
+                                <div class="col-md-8">
+                                    <input type="datetime-local" name="arriving_date" class="form-control">
+                                </div>
+                                @error('arriving_date')
                                 <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>

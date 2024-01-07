@@ -41,9 +41,9 @@
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-8">
-                                    <input type="text" name="child_price" class="form-control" value="{{$trip->child_price}}"
-                                        placeholder="اخل التكلفة للطفل">
-                                    @error('child_price')
+                                    <input type="text" name="price_child" class="form-control" value="{{$trip->price_child}}"
+                                        placeholder="ادخل التكلفة للطفل">
+                                    @error('price_child')
                                     <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
@@ -126,24 +126,24 @@
                         <br>
                         <div class="row mb-2">
                             <div class="col col-md-6">
-                                <label class="col-md-4 control-label"> موعد الوصول
-                                    <span class="required" aria-required="true"> * </span>
-                                </label>
-                                <div class="col-md-8">
-                                    <input type="time" name="arriving_time" class="form-control" value="{{$trip->arriving_time}}">
-                                </div>
-                                @error('arriving_time')
-                                <small class="text-danger">{{ $message }}</small>
-                                @enderror
-                            </div>
-                            <div class="col col-md-6">
                                 <label class="col-md-4 control-label"> موعد الاقلاع
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-8">
-                                    <input type="time" name="tack_off_time" class="form-control" value="{{$trip->tack_off_time}}">
+                                    <input type="datetime-local" name="leaving_date" class="form-control" value="{{$trip->leaving_date}}">
                                 </div>
-                                @error('tack_off_time')
+                                @error('leaving_date')
+                                <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                            <div class="col col-md-6">
+                                <label class="col-md-4 control-label"> موعد الوصول
+                                    <span class="required" aria-required="true"> * </span>
+                                </label>
+                                <div class="col-md-8">
+                                    <input type="datetime-local" name="arriving_date" class="form-control" value="{{$trip->arriving_date}}">
+                                </div>
+                                @error('arriving_date')
                                 <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>

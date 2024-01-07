@@ -13,14 +13,17 @@ return new class extends Migration
     {
         Schema::create('trips', function (Blueprint $table) {
             $table->id();
+            $table->float('price_adult',10,5);
+            $table->float('price_child',10,5);
             $table->integer('from');
             $table->integer('to');
-            $table->time('arriving_time');
-            $table->time('tack_off_time');
-            $table->float('price_adult',10,5);
-            $table->float('child_price',10,5);
-            $table->integer('passengers');
+            $table->timestamp('leaving_date');
+            $table->timestamp('arriving_date');
+            $table->integer('passengers')->nullable();
             $table->timestamps();
+
+            $table->foreign('from')->references('id')->on('states');
+            $table->foreign('to')->references('id')->on('states');
         });
     }
 
