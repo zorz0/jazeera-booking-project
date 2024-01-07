@@ -84,4 +84,14 @@ class TripController extends Controller
         Alert::success('success' , 'تم حذف الرحلة بنجاح');
         return redirect()->route('trips.index');
     }
+
+     /**
+     * choose Trip
+     */
+    public function chooseTrip(Request $request)
+    {
+        $trips = Trip::with(['fromCity' , 'toCity'])->paginate(10);
+        $countries = Country::all();
+        return view('frontend.choose_trip' , compact('trips','countries'));
+    }
 }

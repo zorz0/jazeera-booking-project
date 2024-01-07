@@ -39,7 +39,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" name="currency_id" class="form-control" placeholder="اخل عملة الدولة">
+                                <input type="text" name="currency_id" class="form-control" placeholder="ادخل عملة الدولة">
                                 @error('currency_id')
                                 <small class="text-danger">{{ $message }}</small>
                                 @enderror

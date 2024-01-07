@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('client_id');
             $table->integer('trip_id');
-            $table->integer('passengers');
+            $table->integer('adult_no');
             $table->timestamps();
         });
     }

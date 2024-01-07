@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tamen</title>
+    <title>طيران الجزيرة</title>
     <!-- Fontawesome Free version 6.3.0 -->
     <link rel="stylesheet" href="{{asset('frontend/assets/css/vendor/all.min.css')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -93,6 +93,7 @@
     <!-- end footer -->
 
     <!-- Bootsrap Version-5.0.2 -->
+    
     <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -102,6 +103,7 @@
     </script>
     <!-- Main JavaScript File -->
     <script src="{{asset('frontend/assets/js/main.js')}}"></script>
+    @yield('custom-script')
 </body>
 
 </html>

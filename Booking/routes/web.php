@@ -57,6 +57,12 @@ Route::controller(CityController::class)->prefix('cities')->middleware('auth')->
     Route::post('/getCitiesByCountryAjax', 'getCitiesByCountryAjax')->name('getCitiesByCountryAjax');
 });
 
-Route::view('/choose_trip' , 'frontend.choose_trip');
-Route::view('/trip_invoice' , 'frontend.trip_invoice');
-Route::view('/passengers_details' , 'frontend.passengers_details');
+//Route::view('/choose_trip' , 'frontend.choose_trip');
+Route::get('/choose_trip', [TripController::class,'chooseTrip'])->name('choose_trip');
+Route::get('/passengers_details/{trip_id}', [ClientController::class,'create'])->name('passengers_details');
+Route::post('/passengers_details/store', [ClientController::class,'store'])->name('passengers_details.store');
+Route::get('/bank_info/{trip_id}/{client_id}', [ClientController::class,'getBankInfo'])->name('bank_info');
+Route::post('/bank_info/store', [ClientController::class,'storeBankInfo'])->name('bank_info.store');
+Route::get('/trip_invoice/{id}', [ClientController::class,'tripInvoice'])->name('trip_invoice');
+//Route::view('/trip_invoice' , 'frontend.trip_invoice');
+//Route::view('/passengers_details' , 'frontend.passengers_details');
