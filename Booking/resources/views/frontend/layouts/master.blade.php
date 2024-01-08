@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <!-- start navbar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">

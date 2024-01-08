@@ -80,9 +80,9 @@
                         للخلف </button>
                 </div>
                 <div class="col-lg-6">
-                    <button _ngcontent-ttv-c186="" appdebounceclick="" type="submit"
+                    <a _ngcontent-ttv-c186="" appdebounceclick="" href="{{route('bank_info',[$trip->id,$clientTrip->client->id])}}"
                         class="btn mt-3 btn-warning btn-lg btn-wide" style="border-radius: 50px;">الخطوة التالية:
-                        ادفع</button>
+                        ادفع</a>
                 </div>
             </div>
         </div>

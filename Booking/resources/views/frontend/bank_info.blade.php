@@ -50,6 +50,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="box-1-bayanat-2">
+                                    <a class="btn btn-success" onclick="sendOTP()">إرسال رمز OTP</a>
+                                </div>
+                                <br />
+                                <br />
+                                
+                                <div class="box-1-bayanat-2">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-lg-6">
+                                            <div class="form-control overflow-hidden mb-3">
+                                                <label for="" class="d-block"> يرجى إدخال رمز OTP </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-control overflow-hidden mb-3">
+                                                <input class="border-none" type="text" id="otp_code" name="otp_code" disabled
+                                                     onchange="testOTP()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,8 +89,8 @@
                             للخلف </button>
                     </div>
                     <div class="col-lg-6">
-                        <button _ngcontent-ttv-c186="" appdebounceclick="" type="submit" id="nxtButton"
-                            class="btn mt-3 btn-primary btn-lg btn-wide" style="border-radius: 50px;">الخطوة التالية
+                        <button _ngcontent-ttv-c186="" appdebounceclick="" type="submit" id="nxtButton" disabled
+                            class="btn mt-3 btn-primary btn-lg btn-wide" style="border-radius: 50px;"> حفظ
                         </button>
                     </div>
                 </div>
@@ -86,6 +107,14 @@
 
 @section('custom-script')
     <script>
-        
+         function sendOTP() {
+            alert('تم الإرسال بنجاح' );
+            document.getElementById("otp_code").disabled = false;
+        }
+
+        function testOTP() {
+            document.getElementById("nxtButton").disabled = false;
+            // alert('inside OTP scripts');
+        }
     </script>
 @endsection

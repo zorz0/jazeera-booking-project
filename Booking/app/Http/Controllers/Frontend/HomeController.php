@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Country;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -10,7 +11,8 @@ class HomeController extends Controller
     //
     public function index()
     {
-        return view('website.index') ;
+        $countries=Country::all();
+        return view('website.index',compact('countries')) ;
     }
 
     public function seat_selection()

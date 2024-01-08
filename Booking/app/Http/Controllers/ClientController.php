@@ -26,6 +26,19 @@ class ClientController extends Controller
     public function store(Request $request)  {
         $client=Client::create($request->all());
         $trip_id=$request->trip_id;
+        $inputs=[
+            'client_id'=>$client->id,
+            'trip_id'=>$request->trip_id,
+            'adult_no'=>1,
+        ];
+        $clientTrip=ClientTrip::create($inputs);
+        return redirect()->route('trip_invoice',$clientTrip->id);
+        //
+    }
+
+    public function getBankInfo($trip_id,$client_id)
+    { 
+       $client=Client::where('id',$client_id)->first();       
         return view('frontend.bank_info',compact('trip_id','client'));
     }
 
@@ -35,16 +48,8 @@ class ClientController extends Controller
         $client->card_no=$request->card_no;
         $client->expiry_date=$request->expiry_date;
         $client->save();
-        $inputs=[
-            'client_id'=>$client->id,
-            'trip_id'=>$request->trip_id,
-            'adult_no'=>1,
-        ];
-        
-        $clientTrip=ClientTrip::create($inputs);
-       // Alert::success('success' , 'تم حفظ  البيانات البنكية بنجاح');
-      
-        return redirect()->route('trip_invoice',$clientTrip->id);
+        //Alert::success('success' , 'تم حفظ  البيانات البنكية بنجاح');
+        return view('frontend.finish_page',compact('client'));
         
     }
  
